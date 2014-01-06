@@ -1,0 +1,110 @@
+{% include header.html %}
+		<div class="fullwidth-container" style="position: relative;float: left; height: 110px; width: 100%;height: 110px;background: url(http://designarethemes.com/themes/freshlookwp/wp-content/uploads/2012/11/refined.jpg) no-repeat; background-size: 100% auto">
+		<div class="container" >
+			
+			<div class="pageTitle sixteen columns"  style='margin-top: 0px;'>
+		   		
+		   		<h3 class="page_title nine columns" style="color: #ffffff; font-size: 28px">{{ page.title }}</h3>
+		   		
+		   		
+				
+			</div>
+		</div>
+	</div>
+				
+	<div id="white_content">
+		<div id="wrapper">
+			<div class="container">
+					<div class="post">
+						<div class="entry">
+							<div class="main_cols container">
+								<div class="eight columns">
+									<h5 style="font-size: 13px; color: #333;">CARD DETAILS</h5>
+									<div><strong>Credit Limit:</strong> {{ page.credit_limit }}</div>
+									<div><strong>Date Open:</strong> {{ page.date_open }}</div>
+									<div><strong>Balance:</strong> {{ page.balance }}</div>
+									<div><strong>Statement Date:</strong> {{ page.statement_date }}</div>
+									<div><strong>Slots Available:</strong> {{ page.slots_available }}</div>
+								</div>								
+
+								<div class="eight columns">
+									
+									<div class="featured-box simpleborder" style="position:relative;left:2px;text-align:center;">
+										<div class="fancyb">
+											<script type="text/javascript" src="https://gumroad.com/js/gumroad-embed.js"></script>
+											<div class="gumroad-product-embed" data-gumroad-product-id="{{ page.gumroad_id }}"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="main_cols container">
+								<div class="eight columns">
+								Blah blah blah
+								</div>
+
+								<div class="eight columns">
+									<h3>Add this credit card to your credit history.</h3>
+									<div class="des-sc-dots-divider"></div>
+									<div class="contact-form">
+									<div class="message_success form_success"></div>
+									<form method="post" action="#" class="validateform">
+										<ul class="forms">
+											<li>
+												<label for="name">Name</label><input type="text" name="name" class="yourname txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.yourname_val').html(v);">
+												<div class="yourname_val" style="display:none"></div>
+											</li>
+											<li>
+												<label for="email">Email</label><input style="margin: 10px 0;" type="text" name="email" class="youremail txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.youremail_val').html(v);">
+												<div class="youremail_val" style="display:none"></div>
+											</li>
+											<li>
+												<label for="address">Street Address</label><input style="margin: 10px 0;" type="text" name="address" class="youraddress txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.youraddress_val').html(v);">
+												<div class="youraddress_val" style="display:none"></div>
+											</li>
+											<li>
+												<label for="city">City</label><input style="margin: 10px 0;" type="text" name="city" class="yourcity txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.yourcity_val').html(v);">
+												<div class="yourcity_val" style="display:none"></div>
+											</li>
+											<li>
+												<label for="state">State</label><input style="margin: 10px 0;" type="text" name="state" class="yourstate txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.yourstate_val').html(v);">
+												<div class="yourstate_val" style="display:none"></div>
+											</li>
+											<li>
+												<label for="zip">ZIP Code</label><input style="margin: 10px 0;" type="text" name="zip" class="yourzip txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.yourzip_val').html(v);">
+												<div class="yourzip_val" style="display:none"></div>
+											</li>
+											<li>
+												<label for="phone">Phone Number</label><input style="margin: 10px 0;" type="text" name="phone" class="yourphone txt corner-input" onfocus="checkerror(this)" onblur="var v = $(this).val(); $('.yourphone_val').html(v);">
+												<div class="yourphone_val" style="display:none"></div>
+											</li>
+											<li style="clear:both;">
+												<a style="font-family: Arial, sans-serif;" id="send-comment" href="javascript:;" onclick="sendemail($(this),'brakzilla@gmail.com', 'Enhance Your Score Contact', 'Please enter a name.', 'Please enter a valid email.', 'Please give us a message.', 'Thanks! We will back to you soon...', 'Something wrong. Try again.')" class="submit button medium yellow">Purchase Now</a>
+											</li>
+										</ul>
+									</form>
+									</div>
+								</div>								
+							</div>
+					<div style="height:50px;clear:both;"></div>
+					<div class="featured-box fancyborder">
+					<div class="fancyb">
+						<h3 style="font-size: 23px;text-align: left;width: 77%;clear: right;float: left;top: 10px;position: relative;left: 13px;">Our service is 100% guaranteed.</h3>
+						<p style="text-align: left; color: #999;width: 72%; position: relative; float: left;top: 9px;">
+							<span style="font-size: 20px;left: 13px;position: relative;left: 13px;font-weight: 100;color: #ccc;top:2px;">We will refund you if you see no credit increase.</span>
+						</p>
+						<p style="text-align: right;width: 28%;float: right;position: relative;top: -18px;right: 8px;">
+							<a href="/how-it-works" class="button big green">
+								<span>Learn more &raquo;</span>
+							</a>
+						</p>
+					</div>
+				</div>
+
+						</div><!-- .entry-content -->
+					</div><!-- #content -->
+				</div><!-- #primary -->
+			</div><!-- #primary -->
+		</div><!-- enf of .container -->
+	</div><!-- end of wrapper -->
+{% include footer.html %}

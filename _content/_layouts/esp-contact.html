@@ -1,0 +1,105 @@
+{% include esp-header.html %}
+		<!-- START: PATE_TILE -->
+		<div class="fullwidth-container" style="position: relative;float: left; height: 110px; width: 100%;height: 110px;background: url('http://designarethemes.com/themes/freshlookwp/wp-content/uploads/2012/11/1352651216shattered.png') 0 0 repeat;">
+				<div class="container">
+				<div class="pageTitle sixteen columns" style="margin-top: 0px;">
+		    		<h3 class="page_title nine columns" style="color: #444444; font-size: 18px">{{ page.title }}</h3>
+		    	</div>
+			</div>
+		</div>
+		<!-- END: PATE_TILE -->
+
+		
+		<div id="white_content">
+	
+			<div id="wrapper">
+		
+				<div class="container">								
+				
+					<div class="post">
+				    	
+						<div class="entry">
+			
+							<div class="main_cols container">
+								
+								<div class="four columns">
+									
+									<!-- START: FLEXSLIDER -->
+								    <div id="myslider-1" class="flexslider clearfix">
+								        <h4 class="flex-title"></h4>
+								
+								        <ul class="slides">
+								            <li>
+								                <a href='javascript:;'><img src='http://designarethemes.com/themes/freshlookwp/wp-content/uploads/2012/11/1.jpg' alt=''></a>
+								
+								                <p class='flex-caption'><span class='caption-title'>Cada cliente se corresponde con un asesor de crédito</span></p>
+								            </li>
+								
+								            <li>
+								                <a href='javascript:;'><img src='http://designarethemes.com/themes/freshlookwp/wp-content/uploads/2012/11/3.jpg' alt=''></a>
+								
+								                <p class='flex-caption'><span class='caption-title'>Seguro 256-bits de encriptación y sistemas de privacidad de clientes</span></p>
+								            </li>
+								
+								            <li>
+								                <a href='javascript:;'><img src='http://designarethemes.com/themes/freshlookwp/wp-content/uploads/2012/11/4.jpg' alt=''></a>
+								
+								                <p class='flex-caption'><span class='caption-title'>Acceso a un equipo de expertos de crédito para responder a sus preguntas</span></p>
+								            </li>
+								
+								            <li>
+								                <a href='javascript:;'><img src='http://designarethemes.com/themes/freshlookwp/wp-content/uploads/2012/11/2.jpg' alt=''></a>
+								
+								                <p class='flex-caption'><span class='caption-title'>Respaldado por una garantía de servicio al 100%</span></p>
+								            </li>
+								        </ul>
+								    </div>
+								    <script type="text/javascript">
+								    	$(document).ready(function(){
+										    $('#myslider-1').flexslider({
+										    	animation: "fade",
+										    	slideDirection: "vertical",
+										    	directionNav: true,
+										    	slideshowSpeed: 5500,
+										    	controlsContainer: '#myslider-1 .flex-container',
+										    	pauseOnAction: false,
+										    	pauseOnHover: true,
+										    	keyboardNav: false,
+										    	controlNav: false, 
+										    	start: function(slider) {
+										    		$("#myslider-1 .slides li").eq(slider.currentSlide).find(".flex-caption").animate({'bottom' : '0'}, 500);
+										    	} ,after: function(slider) {
+										    		$("#myslider-1 .slides li").find(".flex-caption").each(function(){
+										    			$(this).css('bottom', '-100px'); 
+										    			if($(this).parent().hasClass('clone')){}
+										    			else{
+										    				$(this).animate({'bottom' : '-100px'}, 500);
+										    			}
+										    		});
+										    		$("#myslider-1 .slides li").eq(slider.currentSlide).find(".flex-caption").animate({'bottom' : '0'}, 500);
+										    	}
+										    });
+										});
+								    </script>
+								    <p>&nbsp;</p>
+								    <p>Enhance Your Score no es una organización de la prueba de reparación de crédito. No intente modificar o cambiar su historial de crédito y los clientes que tienen mal crédito no están calificados para utilizar nuestro servicio.</p>
+								</div>
+								
+								<div class="twelve columns">
+									<h3>{{ page.title }}</h3>
+									<div class="des-sc-dots-divider"></div>
+									{{ content }}
+
+									<script type="text/javascript" src="http://form.jotform.us/jsform/32817070558154"></script>
+
+								</div>
+							</div>
+								
+
+
+						</div>
+						</div>
+						</div><!-- #primary -->
+				</div><!-- enf of .container -->
+			</div><!-- end of wrapper -->
+{% include esp-footer.html %}
