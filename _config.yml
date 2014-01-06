@@ -1,12 +1,5 @@
 source: ./_content
-
-name: ""
-description: ""
-
-url: "http://localhost:4000"
-
 paginate: 10
-
 markdown: rdiscount
 permalink: pretty
 pygments: true
